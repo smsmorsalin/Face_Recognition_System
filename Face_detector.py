@@ -12,7 +12,6 @@ while True:
 
     for (x, y, w, h) in faces:
         cv2.rectangle(video_data, (x, y), (x+w, y+h), (255, 0, 0), 2)
-        print(video_data)
     cv2.imshow("Video_Live", video_data)
 
     if cv2.waitKey(2) == ord('x'):
